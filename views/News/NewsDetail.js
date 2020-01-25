@@ -75,8 +75,8 @@ export class NewsDetail extends React.Component {
                         >
                         </Image>
                         <View style={{ padding: 15, }}>
-                            <Text style={[ styles.text_font, { fontSize: 20, color: '#ff9900', }]}>
-                                {this.state.news.news_title} <Text style={[ styles.text_font, { fontSize: 14, color: 'grey', }]}>{this.state.news.news_date}</Text>
+                            <Text style={[ styles.text_font, { fontSize: 20, color: '#000000', fontWeight:'700' }]}>
+                                {this.state.news.news_title} <Text style={[ styles.text_font, { fontSize: 14, color: 'grey', fontStyle:'italic' }]}>วันที่ {this.state.news.news_date}</Text>
                             </Text>
                         </View>
                         <View style={{ paddingLeft: 15, paddingRight: 15, }}>
@@ -95,7 +95,7 @@ export class NewsDetail extends React.Component {
         }
 
         return (
-            <ScrollView style={{ backgroundColor: '#010001', }}>
+            <ScrollView style={{ backgroundColor: '#FFFFFF', }}>
                 <StatusBar hidden={true} />
                 {display_data} 
             </ScrollView>
@@ -105,8 +105,8 @@ export class NewsDetail extends React.Component {
 
 const styles = StyleSheet.create({
 	text_font: {
-		fontFamily: 'Kanit-Regular',
-		fontSize: 16,
-        color: '#fff',
+		fontFamily: 'Tahoma',
+		fontSize: 14,
+        color: '#000000',
     },
 });

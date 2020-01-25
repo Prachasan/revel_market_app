@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
     Image,
     ImageBackground,
@@ -13,6 +14,7 @@ import {
     Content,
 } from "native-base"
 
+
 import NetworkFailed from '../../component/NetworkFailed';
 import NotFound from '../../component/NotFound';
 import Loading from '../../component/Loading';
@@ -20,6 +22,7 @@ import Loading from '../../component/Loading';
 import GOBALS from '../../GOBALS';
 
 import NewsModel from '../../models/NewsModel'
+
 
 var news_model = new NewsModel
 
@@ -88,8 +91,8 @@ export default class News extends React.Component {
                                 </TouchableOpacity>
                             </View>
                             <View style={{ flex: 1, flexDirection: 'column', paddingLeft: 10 }} >
-                                <Text style={[ styles.text_font, { fontSize: 18, color: '#ff9900', }]} numberOfLines={1}>{this.state.news[i].news_title}</Text>
-                                <Text style={[ styles.text_font, { fontSize: 12, color: 'gray', }]}>{this.state.news[i].news_date}</Text>
+                                <Text style={[ styles.text_font, { fontSize: 18, color: '#E8E21C', }]} numberOfLines={1}>{this.state.news[i].news_title}</Text>
+                                <Text style={[ styles.text_font, { fontSize: 12, color: 'gray', }]}>{ this.state.news[i].news_date}</Text>
                                 <Text style={[ styles.text_font, { fontSize: 14, } ]} numberOfLines={4}>{this.state.news[i].news_description}</Text>
                             </View>
                         </View>
